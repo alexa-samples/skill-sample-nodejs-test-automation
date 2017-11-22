@@ -1,0 +1,9 @@
+configuration:
+  endpoint:
+    type:     InvocationApi
+    skillId:  # <<enter your skill-id>>
+    region:   NA 
+    locale:   en-US
+
+Launch:
+  - response.shouldEndSession == false

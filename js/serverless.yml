@@ -1,0 +1,28 @@
+service: io-klerch-alexa-numberguess
+
+provider:
+  name: aws
+  stage: prod
+  runtime: nodejs6.10
+  region: us-east-1
+  memorySize: 1024 
+  timeout: 8 
+  versionFunctions: false 
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:DescribeTable
+        - dynamodb:Query
+        - dynamodb:GetItem
+        - dynamodb:PutItem
+        - dynamodb:UpdateItem
+        - dynamodb:DeleteItem
+        - dynamodb:CreateTable
+      Resource: "arn:aws:dynamodb:us-east-1:*:table/io.klerch.alexa.numberguess"
+
+functions:
+  skill:
+    name: ${self:service}-skill
+    handler: index.handler
+    events:
+      - alexaSkill

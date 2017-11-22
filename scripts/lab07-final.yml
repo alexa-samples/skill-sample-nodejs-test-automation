@@ -1,0 +1,93 @@
+configuration:
+  endpoint:
+    type:     InvocationApi
+    skillId:  # <<enter your skill-id>>
+    region:   NA 
+    locale:   en-US
+
+StopIt: &Exit
+  - intent: AMAZON.StopIntent
+  - response.shouldEndSession == true
+
+GuessOne: &GuessOne
+  - intent: GuessNumber
+  - number: 1
+  - response.outputSpeech.ssml =~ /.*Great. That’s it.*/i
+  - response.outputSpeech.ssml =~ /.*Great. That’s it.*/i : *Exit
+
+GuessTwo: &GuessTwo
+  - intent: GuessNumber
+  - number: 2
+  - response.outputSpeech.ssml =~ /.*My number is lower.*/i : *GuessOne
+  - response.outputSpeech.ssml =~ /.*Great. That’s it.*/i : *Exit
+
+GuessThree: &GuessThree
+  - intent: GuessNumber
+  - number: 3
+  - response.outputSpeech.ssml =~ /.*My number is lower.*/i : *GuessTwo
+  - response.outputSpeech.ssml =~ /.*Great. That’s it.*/i : *Exit
+
+GuessFour: &GuessFour
+  - intent: GuessNumber
+  - number: 4
+  - response.outputSpeech.ssml =~ /.*My number is lower.*/i : *GuessThree
+  - response.outputSpeech.ssml =~ /.*Great. That’s it.*/i : *Exit
+
+GuessTen: &GuessTen
+  - intent: GuessNumber
+  - number: 10
+  - response.outputSpeech.ssml =~ /.*Great. That’s it.*/i
+  - response.outputSpeech.ssml =~ /.*Great. That’s it.*/i : *Exit
+
+GuessNine: &GuessNine
+  - intent: GuessNumber
+  - number: 9
+  - response.outputSpeech.ssml =~ /.*My number is higher.*/i : *GuessTen
+  - response.outputSpeech.ssml =~ /.*Great. That’s it.*/i : *Exit
+
+GuessEight: &GuessEight
+  - intent: GuessNumber
+  - number: 8
+  - response.outputSpeech.ssml =~ /.*My number is higher.*/i : *GuessNine
+  - response.outputSpeech.ssml =~ /.*Great. That’s it.*/i : *Exit
+
+GuessSeven: &GuessSeven
+  - intent: GuessNumber
+  - number: 7
+  - response.outputSpeech.ssml =~ /.*My number is higher.*/i : *GuessEight
+  - response.outputSpeech.ssml =~ /.*Great. That’s it.*/i : *Exit
+
+GuessSix: &GuessSix
+  - intent: GuessNumber
+  - number: 6
+  - response.outputSpeech.ssml =~ /.*My number is higher.*/i : *GuessSeven
+  - response.outputSpeech.ssml =~ /.*Great. That’s it.*/i : *Exit
+
+GuessFive: &GuessFive
+  - intent: GuessNumber
+  - number: 5
+  - response.outputSpeech.ssml =~ /.*My number is higher.*/i : *GuessSix
+  - response.outputSpeech.ssml =~ /.*My number is lower.*/i : *GuessFour
+  - response.outputSpeech.ssml =~ /.*Great. That’s it.*/i : *Exit
+
+Launch:
+  - response.shouldEndSession == false
+  - *GuessFive
+
+
+# Session still open / closed
+# response.shouldEndSession == true            (session is still open)
+# response.shouldEndSession == false           (session is closed)
+
+# Asset exists
+# response.outputSpeech.ssml                   (ssml exists)
+# response.reprompt.outputSpeech.text          (plain reprompt ext exists)
+# response.card                                (card exists)
+# response.card.image                          (card image exists)
+# sessionAttributes.key                        (session attribute named key exists)
+
+# Asset has specific value
+# response.outputSpeech.ssml =~ /.*test.*/i     (ssml outputspeech contains "test")
+# sessionAttributes.key == 1                    (session attribute named key has value equal to 1
+# sessionAttributes.key >= 10                   (session attribute named key has value >= 10
+# sessionAttributes.key >= 10                   (session attribute named key has value >= 10

@@ -1,0 +1,34 @@
+configuration:
+  endpoint:
+    type:     InvocationApi
+    skillId:  # <<enter your skill-id>>
+    region:   NA 
+    locale:   en-US
+
+GuessFive: &GuessFive
+  - intent: # <<enter here>>
+  - number: 5
+  - response.shouldEndSession == false
+  - response.outputSpeech.ssml 
+
+Launch:
+  - response.shouldEndSession == false
+  - *GuessFive
+
+
+# Session still open / closed
+# response.shouldEndSession == true            (session is still open)
+# response.shouldEndSession == false           (session is closed)
+
+# Asset exists
+# response.outputSpeech.ssml                   (ssml exists)
+# response.reprompt.outputSpeech.text          (plain reprompt text exists)
+# response.card                                (card exists)
+# response.card.image                          (card image exists)
+# sessionAttributes.key                        (session attribute named key exists)
+
+# Asset has specific value
+# response.outputSpeech.ssml =~ /.*test.*/i     (ssml outputspeech contains "test")
+# sessionAttributes.key == 1                    (session attribute named key has value equal to 1
+# sessionAttributes.key >= 10                   (session attribute named key has value >= 10
+# sessionAttributes.key >= 10                   (session attribute named key has value >= 10

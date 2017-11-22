@@ -1,0 +1,37 @@
+{
+  "skillManifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Yet another number guessing game.",
+          "examplePhrases": [
+            "Alexa, open number guessing",
+            "Alexa, ask number guessing for a quiz",
+            "Alexa, ask number guessing for help"
+          ],
+          "name": "Number guessing game",
+          "description": "Guess the number Alexa thinks of."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "",
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:661661179496:function:io-klerch-alexa-numberguess-skill"
+        },
+        "regions": {
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:661661179496:function:io-klerch-alexa-numberguess-skill"              
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

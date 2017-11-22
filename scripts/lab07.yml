@@ -1,0 +1,49 @@
+configuration:
+  endpoint:
+    type:     InvocationApi
+    skillId:  # <<enter your skill-id>>
+    region:   NA 
+    locale:   en-US
+
+StopIt: &Exit
+  - intent: AMAZON.StopIntent
+  - response.shouldEndSession == true
+
+GuessFour: &GuessFour
+  - intent: GuessNumber
+  - number: 4
+  - response.outputSpeech.ssml =~ /.*Great. That’s it.*/i : *Exit
+
+GuessSix: &GuessSix
+  - intent: GuessNumber
+  - number: 6
+  - response.outputSpeech.ssml =~ /.*Great. That’s it.*/i : *Exit
+
+GuessFive: &GuessFive
+  - intent: GuessNumber
+  - number: 5
+  - response.outputSpeech.ssml =~ /.*My number is higher.*/i : # <<fill in>>
+  - response.outputSpeech.ssml =~ /.*My number is lower.*/i : # <<fill in>>
+  - response.outputSpeech.ssml =~ /.*Great. That’s it.*/i : # <<fill in>>
+
+Launch:
+  - response.shouldEndSession == false
+  - *GuessFive
+
+
+# Session still open / closed
+# response.shouldEndSession == true            (session is still open)
+# response.shouldEndSession == false           (session is closed)
+
+# Asset exists
+# response.outputSpeech.ssml                   (ssml exists)
+# response.reprompt.outputSpeech.text          (plain reprompt text exists)
+# response.card                                (card exists)
+# response.card.image                          (card image exists)
+# sessionAttributes.key                        (session attribute named key exists)
+
+# Asset has specific value
+# response.outputSpeech.ssml =~ /.*test.*/i     (ssml outputspeech contains "test")
+# sessionAttributes.key == 1                    (session attribute named key has value equal to 1
+# sessionAttributes.key >= 10                   (session attribute named key has value >= 10
+# sessionAttributes.key >= 10                   (session attribute named key has value >= 10

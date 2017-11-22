@@ -1,0 +1,23 @@
+{
+  "name": "io-klerch-alexa-number-guessing",
+  "version": "1.0.0",
+  "description": "Guess the number Alexa thinks of.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "alexa",
+    "number guessing",
+    "demo"
+  ],
+  "author": "Kay Lerch",
+  "license": "See license in ../LICENSE.txt",
+  "dependencies": {
+    "alexa-sdk": "^1.0.14"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KayLerch/io-klerch-alexa-number-guessing"
+  }
+}

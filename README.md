@@ -17,10 +17,10 @@
 - Clone this Github repository on your local system.  
 
 ```bash
-$ git clone https://github.com/KayLerch/ALX315 
+$ git clone https://github.com/alexa/skill-sample-nodejs-test-automation
 ```
 
-or [download](https://github.com/KayLerch/ALX315/archive/master.zip) and unzip it
+or [download](https://github.com/alexa/skill-sample-nodejs-test-automation/archive/master.zip) and unzip it
 
 ## **Lab guides**
 

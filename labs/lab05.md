@@ -14,6 +14,8 @@ You have learned how to define assertions on returned skill responses in a YAML 
 - **S3 Test script bucket** that was created in [Lab 4](lab04.md)
 - **Number guessing skill** that was deployed to your Amazon developer account in [Lab 1](lab01.md)
 
+We recommend you to use an advanced text editor or IDE. You could also use an [Online YAML editor](https://codebeautify.org/yaml-validator) if you want.
+
 ## **Instructions**
 
 ### **5.1.) Single-turn conversation with Invocation API** 

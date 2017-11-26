@@ -46,6 +46,8 @@ The stack creates an S3 bucket and a Lambda function which hosts the test client
 
 ### **4.2) Run your first test script** 
 
+We recommend you to use an advanced text editor or IDE. You could also use an [Online YAML editor](https://codebeautify.org/yaml-validator) if you want.
+
 **4.2.1.** Navigate to the [./scripts/lab04.yml](../scripts/lab04.yml) in this repo. This is your first conversation test script. Look at it and familiarize with its content.
 
 **4.2.2.** Return to the S3 bucket windows in your browser. The bucket should have a name similar to _reinvent-alx315-testscriptbucket-xxxxxxxxxx_. 

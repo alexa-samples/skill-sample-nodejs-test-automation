@@ -13,6 +13,8 @@ You have learned how to chain multiple requests to simulate multi-turn conversat
 - **S3 Test-Script bucket** that was created in [Lab 4](lab04.md)
 - **Number guessing skill** that was deployed to your Amazon developer account in [Lab 1](lab01.md)
 
+We recommend you to use an advanced text editor or IDE. You could also use an [Online YAML editor](https://codebeautify.org/yaml-validator) if you want.
+
 ## **Instructions**
 
 ### **6.1.) Multi-turn conversation with Invocation API** 

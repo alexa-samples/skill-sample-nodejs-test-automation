@@ -5,7 +5,7 @@
 
 - **Amazon Developer Account** Go to the [Amazon developer console](https://developer.amazon.com/) to sign up for free in case you don't have an account yet.
 
-- **AWS Developer Account** Go to the [AWS Signup pages](https://portal.aws.amazon.com/billing/signup#/) to create an account in case you don't already have an account. You need a valid credit card and a phone.
+- **AWS Developer Account** Go to the [AWS Signup pages](https://portal.aws.amazon.com/billing/signup#/) to create an account in case you don't already have it. You need a valid credit card and access to your mobile phone.
 
 - **Node.js** is running on your system. If _$ node -version_ does not return a version number
  go to [Node.js downloads page](https://nodejs.org/en/download/) and install it.

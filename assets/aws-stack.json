@@ -1,23 +1,29 @@
 {
     "AWSTemplateFormatVersion": "2010-09-09",
- 
     "Description": "Stack creates an S3 Bucket for test scripts and a Lambda function with the Skill test client.",
- 
     "Parameters": {
        "lwaClientId": {
-        "Description": "Login With Amazon - Client Id",
+        "Description": "Login With Amazon - Client Id // don't change it",
+        "Default" : "amzn1.application-oa2-client.aad322b5faab44b980c8f87f94fbac56",
         "Type": "String",
         "MinLength": "1",
         "ConstraintDescription": "must contain a valid client id."
        },
        "lwaClientSecret": {
-        "Description": "Login With Amazon - Client Secret",
+        "Description": "Login With Amazon - Client Secret // don't change it",
+        "Default" : "1642d8869b829dda3311d6c6539f3ead55192e3fc767b9071c888e60ef151cf9",
         "Type": "String",
         "MinLength": "1",
         "ConstraintDescription": "must contain a valid client secret."
        },
        "lwaRefreshToken": {
-        "Description": "Login With Amazon - Refresh token",
+        "Description": "Login With Amazon - Refresh token // get it from ~/.ask/cli_config on your machine",
+        "Type": "String",
+        "MinLength": "1",
+        "ConstraintDescription": "must contain a valid refresh token."
+       },
+       "skillId": {
+        "Description": "The skill id of your number guessing game skill // get it from the Amazon developer portal",
         "Type": "String",
         "MinLength": "1",
         "ConstraintDescription": "must contain a valid refresh token."
@@ -34,12 +40,13 @@
           "Properties": {
              "Code": {
                 "S3Bucket": "io.klerch.alexa.test",
-                "S3Key": "alexa-skills-kit-tester-java-0.2.0.jar"
+                "S3Key": "alexa-skills-kit-tester-java-1.0.0.jar"
              },
              "Environment" : {
                 "Variables" : {
                     "s3Bucket" : { "Ref" : "TestScriptBucket" },
                     "s3Path" : "",
+                    "skillId" : { "Ref" : "skillId" },
                     "lwaClientId" : { "Ref" : "lwaClientId" },
                     "lwaClientSecret" : { "Ref" : "lwaClientSecret" },
                     "lwaRefreshToken" : { "Ref" : "lwaRefreshToken" }
@@ -77,9 +84,17 @@
                          {
                             "Effect": "Allow",
                             "Action": [
-                               "s3:*"
+                               "s3:ListBucket", 
+                               "s3:ListObjects"
                             ],
-                            "Resource": "*"
+                            "Resource": { "Fn::GetAtt": [ "TestScriptBucket", "Arn" ] }
+                         },
+                         {
+                            "Effect": "Allow",
+                            "Action": [
+                               "s3:GetObject"
+                            ],
+                            "Resource": { "Fn::Join" : [ "/", [ { "Fn::GetAtt": [ "TestScriptBucket", "Arn" ] }, "*" ] ] }
                          },
                          {
                             "Effect": "Allow",

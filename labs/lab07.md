@@ -15,15 +15,15 @@ You have learned how to create branches run tests dynamically depedant on the sk
 
 ## **Instructions**
 
-### **7.1.) Multi path conversation with Invocation API** 
+### **7.1.) Multi-path conversation with Invocation API** 
 
-**7.1.1.** Open [./scripts/lab07.yml](../scripts/lab07.yml). In the configuration section update the missing parameter _skillId_ like you did in [lab06.yml](../scripts/lab06.yml).
+**7.1.1.** Open [./scripts/lab07.yml](../scripts/lab07.yml). 
 
 Aside from the assertions you're already familiar with some of those elements now have a value (an anchor link to another conversation step) assigned to it.
 
-__Side note:__ Assertions that have an anchor link assigned as a value turn into _conditions_. The main difference is that the Test client won't throw an exception in case it is not true. The client rather just evaluates the conditional statement and follows the anchor reference (conversation path) in case it is true. If it's false it steps over it.
+__Side note:__ Assertions that have an anchor link assigned as a value turn into _conditions_. The main difference is that the Test client won't throw an exception in case it is not true. The client rather just evaluates the condition statement and follows the anchor reference (conversation path) in case it is true. If it's false it steps over it.
 
-**7.1.2.** In line 25 to 27 there are some values missing. Please set it correctly according to what makes sense in this case.  
+**7.1.2.** In line 25 to 27 of [lab07.yml](../scripts/lab07.yml) file there are some values missing. Please set it correctly according to what makes sense in this case. 
 
 **7.1.3.** When you are done, upload the [lab07.yml](../scripts/lab07.yml) file to S3 and again run the Test Lambda function. 
 

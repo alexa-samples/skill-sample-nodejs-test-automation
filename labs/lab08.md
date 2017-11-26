@@ -6,7 +6,7 @@
 You will schedule periodical test executions for your skill and set up an alarm in case tests fail. 
 
 ## **What you will get at the end of this lab**
-You have learned how to set up proactive monitoring for your (live) skill. 
+You have learned how to set up proactive monitoring for your skill. 
 
 ## **Prerequisites**
 - **Test Lambda function** you deployed in [Lab 4](lab04.md)
@@ -29,7 +29,8 @@ You have learned how to set up proactive monitoring for your (live) skill.
 
 Confirm with pressing the __Configure details__ button.
 
-**8.1.4.** Set the name to _test-client-run-schedule_ and hit __Create rule__
+**8.1.4.** Set the name to _test-client-run-schedule_ and hit __Create rule__ (PLEASE DON'T FORGET TO DISABLE OR REMOVE
+THIS RULE AFTER THE LAB AS IT MIGHT GENERATE COSTS ON YOUR END)
 
 The Test Lambda function will now execute every 3 minutes and simulates conversations like they are scripted in the YAML files stored in S3. 
 
@@ -59,12 +60,12 @@ Confirm with hitting __Create Alarm__
 
 **8.2.6.** The last exercise is to break something. If the scripts you created during the last labs all work fine, it is now time to let a test run fail. Make an assertion in one of the YAML-files you know will go wrong, upload this file to the S3 bucket and wait for up to 5 minutes. In CloudWatch you can check if the alarm gets triggered. Once this has happened, you should receive an e-mail.
 
-### **8.3.) Clean up**
+### **8.3.) IMPORTANT! Clean up**
 
-To avoid costs don't forget to:
-- remove or disable the CloudWatch alarm you created.
+Please don't forget to:
 - remove or disbale the CloudWatch rule you created.
+- remove or disable the CloudWatch alarm you created.
 
-If you'd like to remove all AWS resources you could also roll back and delete the CloudFormation stack. Just make sure you empty the S3 bucket before rolling it back. 
+If you'd like to remove all AWS resources created in the previous labs you could also roll back and delete the CloudFormation stack. Just make sure you empty the S3 bucket before rolling it back as otherwise it will fail. 
 
 [<< Lab 7](lab07.md) | **Lab 8**

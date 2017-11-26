@@ -5,7 +5,7 @@
 
 - **Amazon Developer Account** Go to the [Amazon developer console](https://developer.amazon.com/) to sign up for free in case you don't have an account yet.
 
-- **AWS Developer Account** Go to the [AWS Signup pages](https://portal.aws.amazon.com/billing/signup#/) to create an account in ase you don't already have an account. You need a valid credit card and a phone.
+- **AWS Developer Account** Go to the [AWS Signup pages](https://portal.aws.amazon.com/billing/signup#/) to create an account in case you don't already have an account. You need a valid credit card and a phone.
 
 - **Node.js** is running on your system. If _$ node -version_ does not return a version number
  go to [Node.js downloads page](https://nodejs.org/en/download/) and install it.
@@ -17,7 +17,7 @@
 - Clone this Github repository on your local system.  
 
 ```bash
-$ git clone https://github.com/alexa/skill-sample-nodejs-test-automation
+$ git clone https://github.com/alexa/skill-sample-nodejs-test-automation 
 ```
 
 or [download](https://github.com/alexa/skill-sample-nodejs-test-automation/archive/master.zip) and unzip it
@@ -33,6 +33,8 @@ or [download](https://github.com/alexa/skill-sample-nodejs-test-automation/archi
 - [Lab07](labs/lab07.md): Multi-path conversations
 - [Lab08](labs/lab08.md): Proactive Skill Monitoring
 
-## License
+## **The Number Guessing Game skill**
 
-This library is licensed under the Amazon Software License.
+You will work with an already implemented skill. It's a simple but fun number guessing skill. 
+
+![](assets/vui.png)

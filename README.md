@@ -1,5 +1,4 @@
-# ALX315 @ AWS re:Invent 2017
-## Test Automation for Alexa Skills
+# Test Automation for Alexa Skills
 
 ## **Prerequisites**
 

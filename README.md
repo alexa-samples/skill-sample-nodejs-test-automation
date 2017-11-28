@@ -6,10 +6,10 @@
 
 - **AWS Developer Account** Go to the [AWS Signup pages](https://portal.aws.amazon.com/billing/signup#/) to create an account in case you don't already have it. You need a valid credit card and access to your mobile phone.
 
-- **Node.js** is running on your system. If _$ node -version_ does not return a version number
+- **Node.js** is running on your system. If _$ node -v_ does not return a version number
  go to [Node.js downloads page](https://nodejs.org/en/download/) and install it.
 
-- **Alexa Skills Kit Commandline Interface** (ask-cli) is installed on your host. If _$ ask -version_ does not return a version number in your console, install it with _$ npm install -g ask-cli_. If you are using Linux, the installation may require _sudo_. More details can be found in the ask-cli [quickstart guide](https://developer.amazon.com/docs/smapi/quick-start-alexa-skills-kit-command-line-interface.html)
+- **Alexa Skills Kit Commandline Interface** (ask-cli) is installed on your host. If _$ ask -v_ does not return a version number in your console, install it with _$ npm install -g ask-cli_. If you are using Linux, the installation may require _sudo_. More details can be found in the ask-cli [quickstart guide](https://developer.amazon.com/docs/smapi/quick-start-alexa-skills-kit-command-line-interface.html)
 
 ## **Getting Started**
 
@@ -17,6 +17,7 @@
 
 ```bash
 $ git clone https://github.com/alexa/skill-sample-nodejs-test-automation 
+$ cd skill-sample-nodejs-test-automation
 ```
 
 or [download](https://github.com/alexa/skill-sample-nodejs-test-automation/archive/master.zip) and unzip it
@@ -34,6 +35,6 @@ or [download](https://github.com/alexa/skill-sample-nodejs-test-automation/archi
 
 ## **The Number Guessing Game skill**
 
-You will work with an already implemented skill. It's a simple but fun number guessing skill. 
+You will work with an already implemented skill. It's a simple but fun number guessing game. 
 
 ![](assets/vui.png)

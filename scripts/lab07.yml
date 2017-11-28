@@ -32,14 +32,14 @@ Launch:
 
 
 # Session still open / closed
-# !(response.shouldEndSession == true)         (session is still open)
-# response.shouldEndSession == false           (session is closed)
+# response.shouldEndSession == false           (session is still open)
+# response.shouldEndSession == true            (session is closed)
 
 # Asset (not) exists
 # response.outputSpeech.ssml                   (ssml exists)
 # response.reprompt.outputSpeech.text          (plain reprompt text exists)
 # response.card                                (card exists)
-# !(response.card.image)                       (card does not contain an image)
+# response.card.image                          (card contains an image)
 # sessionAttributes.key                        (session attribute named key exists)
 
 # Asset has specific value

@@ -12,9 +12,7 @@ You have learned how to set up a new skill with ask-cli in an automated fashion.
 
 ### **1.1.) Initialize ask-cli** 
 
-If you never used ask-cli before, 
-- you need to install it on your local machine. Follow the instructions in [<< Home](../README.md).
-- you need to initialize it and authorize this tool for your Amazon developer account
+If you never used ask-cli before, you need to initialize it and authorize this tool for your Amazon developer account
 
 ```bash
 $ ask init
@@ -22,7 +20,7 @@ $ ask init
 
 and select __Create new Profile__. Skip the input of a profile name by hitting Enter. Also, __skip AWS credential for ask-cli__ as we don't need it. A browser window opens. Follow the login procedure by using your Amazon developer account credentials and grant this tool permission to create and update Alexa skills.  
 
-**Side note:** We won't deploy the skill backend (Lambda function) which you can find in the [<< ./js](../js)-folder. It is already hosted for you in another AWS account and your skill will just point to it and use it. That is why we skipped authorization for AWS in the initialization step. See the homework instructions below in case you would like to deploy the code as part of the skill creation / update procedure via ask-cli. 
+**Side note:** We won't deploy the skill backend (Lambda function) which you can find in the [./js](../js)-folder. It is already hosted for you in another AWS account and your skill will just point to it and use it. That is why we skipped authorization for AWS in the initialization step. See the homework instructions below in case you would like to deploy the code as part of the skill creation / update procedure via ask-cli. 
 
 ### **1.2.) Familiarize with the skill** 
 
@@ -34,7 +32,7 @@ The [./models/en-US.json](../models/en-US.json) in this repo contains the intera
 
 ### **1.3.) Deploy the skill** 
 
-Now that you got a basic idea of what this skill will look like you can deploy it to your Amazon developer account with one single command. Run this below from within the root folder of this repo on your local drive. 
+Now that you got a basic idea of what this skill will look like you can deploy it to your Amazon developer account with one single command. Run the below from within the root folder of this repo on your local drive. 
 
 ```bash
 $ ask deploy

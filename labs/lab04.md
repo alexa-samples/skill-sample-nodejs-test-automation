@@ -18,7 +18,7 @@ When you're back home, you should set up your _clientId_ and _clientSecret_ and 
 
 You will use a CloudFormation template to create an S3 bucket and a Lambda function which hosts the test client tool written in Java.
 
-**4.1.1.** Go to the [AWS developer console](https://console.aws.amazon.com/console/home) and log in with your AWS credentials.
+**4.1.1.** Go to the [AWS management console](https://console.aws.amazon.com/console/home) and log in with your AWS credentials.
 
 **4.1.2.** Go to _Services_ -> _CloudFormation_ and click on __Create Stack__. 
 
@@ -27,7 +27,7 @@ You will use a CloudFormation template to create an S3 bucket and a Lambda funct
 **4.1.4.** Set the following
 - __Stack name:__ reinvent-alx315
 - __lwaClientId, lwaClientSecret__ are already set for you. Those are generic credentials ask-cli used to generate your _refreshToken_. 
-- __lwaRefreshToken:__ on your local machine, navigate to your home folder (_$ cd ~_) and open the _.ask/cli_config_ file. ask-cli created it to store your settings when you initialized the tool in the first lab. Copy the _refreshToken_ you find in this file and paste it into the CloudFormation page. Please note, if you're not seeing the _.ask_ folder in your home directory, tell your file explorer to show hidden objects.
+- __lwaRefreshToken:__ on your local machine, navigate to your home folder (_$ cd ~_) and open the _.ask/cli_config_ file. ask-cli created it to store your settings when you initialized the tool in the first lab. Copy the _refreshToken_ you find in this file and paste it into the CloudFormation setup page. Please note, if you're not seeing the _.ask_ folder in your home directory, tell your file explorer to also show hidden objects.
 - __skillId:__ Here goes the skill-Id of your _number guessing game_ skill. Return to the Amazon developer portal to get it. 
 
 ![](img/lab04-screen06.png)
@@ -38,11 +38,11 @@ Click on __Next__.
 
 **4.1.6.** Confirm __I acknowledge that AWS CloudFormation might create IAM resources.__ and click on  __Create__.
 
-The stack creates an S3 bucket and a Lambda function which hosts the test client. When the status indicates _CREATE_COMPLETE_ go to the _Resource_ tab at the bottom of this page.
+The stack creates an S3 bucket and a Lambda function which hosts the test client. When the status indicates _CREATE_COMPLETE_ go to the _Resources_ tab at the bottom of this page.
 
 ![](img/lab04-screen07.png)
 
-**4.1.7.** In the _Resources_ tab you should see three resources which have been created in your AWS account. Follow the links to the _TestClientLambda_ and _TestScriptBucket_ resource. Each of them will open in up in a new browser tab. Leave them open until the end of this workshop as you will return to your bucket and Lambda function in the upcoming labs.
+**4.1.7.** In the _Resources_ tab you should see three resources which have been created in your AWS account. Follow the links to the _TestClientLambda_ and _TestScriptBucket_ resource. Each of them will open in up in a new browser tab. Leave them open until the end of this workshop as you will return to your S3 bucket and Lambda function in the upcoming labs.
 
 ### **4.2) Run your first test script** 
 

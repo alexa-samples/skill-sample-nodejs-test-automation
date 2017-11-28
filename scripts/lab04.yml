@@ -5,4 +5,4 @@ configuration:
     locale:   en-US
 
 Launch:
-  - response.shouldEndSession == true
+  - response.shouldEndSession == false

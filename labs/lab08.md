@@ -23,7 +23,7 @@ You have learned how to set up proactive monitoring for your skill.
 
 **8.1.2.** Select _Schedule_ and set the fixed rate to 3 minutes.
 
-**8.1.3.** In the right pane click on __Add target__ and point to the _reinvent-alx315-test-client_ Test Lambda function. 
+**8.1.3.** In the right hand side click on __Add target__ and point to the _reinvent-alx315-test-client_ Test Lambda function. 
 
 ![](img/lab08-screen02.png)
 
@@ -56,9 +56,9 @@ Select it and click __Next__.
 
 Confirm with hitting __Create Alarm__
 
-**8.2.5.** CloudWatch sends a confirmation to your mail and waits for your approval on receiving notifications. Click on the confirmation link in the mail and return to CloudWatch.
+**8.2.5.** CloudWatch sends a confirmation to your mail and waits for your approval on sending out notifications to your mailbox. Click on the confirmation link in the mail and return to CloudWatch.
 
-**8.2.6.** The last exercise is to break something. If the scripts you created during the last labs all work fine, it is now time to let a test run fail. Make an assertion in one of the YAML-files you know will go wrong, upload this file to the S3 bucket and wait for up to 5 minutes. In CloudWatch you can check if the alarm gets triggered. Once this has happened, you should receive an e-mail.
+**8.2.6.** The last exercise is to break something. If the scripts you created during the last labs all work fine, it is now time to let a test run fail. Make an assertion in one of the YAML-files you know will go wrong, upload this file to the S3 bucket and wait for up to 3 minutes. In CloudWatch you can check if the alarm got triggered. Once this has happened, you should receive an e-mail.
 
 ### **8.3.) IMPORTANT! Clean up**
 

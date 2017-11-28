@@ -31,7 +31,7 @@ __Side note:__ Assertions that have an anchor link assigned as a value turn into
 
 **7.1.4.** Extend the script so it is going down from 4 to 1 and going up from 6 to 10 when looking for the number the skill thinks of.
 
-The [./scripts/lab07-final.yml](../scripts/lab07-final.yml) file gives you the right solution.
+The [./scripts/lab07-final.yml](../scripts/lab07-final.yml) file gives you the right solution. Extra points: try not to look into it ;)
 
 __Q7.1.5.__ Also look into [./scripts/lab07-extended.yml](../scripts/lab07-extended.yml) file as it provides more configuration options. Can you guess what these new properties stand for and what are use cases to set things like a fixed timestamp or user-id? 
 

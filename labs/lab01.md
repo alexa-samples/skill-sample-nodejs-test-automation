@@ -38,15 +38,19 @@ Now that you got a basic idea of what this skill will look like you can deploy i
 $ ask deploy
 ```
 
+This execution may take 2-3 minutes to complete. Ignore the _[Warning]: Lambda deployment skipped, since AWS credentialsfor profile: [default] is missing._ you will get at the end.
+
 Once the deployment is finished double-check if the skill has been created in your Amazon developer account by running the following command.
 
 ```bash
 $ ask api list-skills
 ```
 
+Do you see a skill entry called _Number guessing game_? Great!
+
 ### **Just in case you got some time ...**
 
-Already done? Great. You can dive deeper into ask-cli [here](https://developer.amazon.com/docs/smapi/ask-cli-command-reference.html) and try out a few other commands if you like. You could also dig into the [skill code](../js) to learn how it is implemented.
+Already done? You can dive deeper into ask-cli [here](https://developer.amazon.com/docs/smapi/ask-cli-command-reference.html) and try out a few other commands if you like. You could also dig into the [skill code](../js) to learn how it is implemented.
 
 ### **Homework**
 

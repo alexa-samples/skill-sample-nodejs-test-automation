@@ -41,10 +41,14 @@ var stateHandlers = {
 
         var guessNumber = parseInt(this.event.request.intent.slots.number.value);
 
-        var outputSpeech = targetNum === guessNumber ? assets.correct :
-            assets.incorrect + ' ' + (targetNum > guessNumber ? assets.numberIsHigher : assets.numberIsLower) + ' <say-as interpret-as="cardinal">' + guessNumber + '</say-as> <p>' + assets.guess + '</p>'
-
-        this.emit(':ask', outputSpeech);
+        if (targetNum === guessNumber) {
+            // reset number
+            this.attributes['number'] = null;
+            this.emit(':ask', assets.correct);
+        } else {
+            var outputSpeech = assets.incorrect + ' ' + (targetNum > guessNumber ? assets.numberIsHigher : assets.numberIsLower) + ' <say-as interpret-as="cardinal">' + guessNumber + '</say-as> <p>' + assets.guess + '</p>';
+            this.emit(':ask', outputSpeech);
+        }
     },
     'AMAZON.YesIntent': function () {
         this.emit('StartQuiz');

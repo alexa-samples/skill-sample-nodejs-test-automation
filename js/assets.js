@@ -16,8 +16,8 @@
 
 module.exports = Object.freeze({
     numberLimit : 10,
-    welcome : 'welcome to the number guessing skill',
-    welcomeBack : 'welcome back to the number guessing skill',
+    welcome : 'welcome to the number guessing skill.',
+    welcomeBack : 'welcome back to the number guessing skill.',
     help : 'this skill is your game master for a simple number guessing game. Do you want to start a game now?',
     helpReprompt : 'do you want to start a game now?',
     guess : 'I am thinking of a number between one and <say-as interpret-as="cardinal">10</say-as>. What is your guess?',

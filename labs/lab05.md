@@ -22,9 +22,9 @@ We recommend you to use an advanced text editor or IDE. You could also use an [O
 
 **5.1.1.** Open [./scripts/lab05.yml](../scripts/lab05.yml). 
 
-__Side note:__ The '#'-sign in front of a line indicates a commentary. It will be ignored by the test client and is just to help you with some extra information.
+__Side note:__ The hash (#)-sign in front of a line indicates a commentary in YAML. It will be ignored by the test client and is just to help you with some extra information.
 
-**5.1.2.** The _Launch_ node is the entry point for the test client. If neither an _intent_ nor an _utterance_ is provided (both are currently commented out), it fires a _LaunchRequest_ at your skill. That's what already happened in Lab 4. There's already one assertion made for the resulting response of the _LaunchRequest_. 
+**5.1.2.** The _Launch_ node is the entry point for the test client. If neither an _intent_ nor an _utterance_ is provided (both are currently commented out), it fires a _LaunchRequest_ at your skill. That's what already happened in Lab 4. There's already one assertion made for the resulting response of the _LaunchRequest_.
 
 **Q5.1.3.** What does the assertion in [lab05.yml](../scripts/lab05.yml) mean?
 
@@ -41,7 +41,7 @@ Now it's your turn. Try the following and upload and run the script as described
 
 **5.1.5** Try to fix the script by changing the assertion and upload the file again. When running the Lambda function, the response should be "Ok" again.
 
-**5.1.6.** Write at least three more assertions on the response returned by the skill. What might help you:
+**5.1.6.** Comment out line 8 again - we'd like to proceed with _LaunchRequest_ (don't forget to negate the assertion again). Now write at least three more assertions on the response returned by the skill. What might help you:
 - Use the Service Simulator in the developer console if you want to inspect the response payload of a _LaunchRequest_. 
 - The [lab05.yml](../scripts/lab05.yml) file contains a few suggestions of what expressions are supported. Assertions are written in simplified [JSONPath](http://goessner.net/articles/JsonPath/) syntax and support all operators valid in JSONPath.
 - Look into the [JSON schema](https://developer.amazon.com/docs/custom-skills/request-and-response-json-reference.html#response-body-syntax) for response bodies of custom skills to use correct path expressions for assertions
@@ -50,12 +50,12 @@ Now it's your turn. Try the following and upload and run the script as described
 
 You can reuse the [lab05.yml](../scripts/lab05.yml) file that you used. Change the following things:
 
-**5.2.1.** uncomment the _utterance_ attribute in the _Launch_ node and remove the _intent_ element. 
+**5.2.1.** uncomment line 9. 
 
 **5.2.2.** in the configuration section at the very top of the file, change the endpoint type from _InvocationApi_ to _SimulationApi_
 
 Rerun the script by uploading it to S3 and execute the Test Lambda function. 
 
-**Q5.2.3.** Can you spot what's different now? 
+**Q5.2.3.** In the log output, can you spot what's different now compared to the previous tests against the InvocationApi? 
 
 [<< Lab 4](lab04.md) | **Lab 5** | [Lab 6 >>](lab06.md)

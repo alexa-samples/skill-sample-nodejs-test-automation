@@ -1,6 +1,6 @@
 [<< Lab 2](lab02.md) | **Lab 3** | [Lab 4 >>](lab04.md)
 
-# ALX315 - Lab Guide 3 - Skill Invocation API and Simulation API
+# Lab Guide 3 - Skill Invocation API and Simulation API
 
 ## **What you will do in this lab**
 Use the Skill Invocation API and Skill Simulation API - part of SMAPI - to test an Alexa skill by using ask-cli 

@@ -1,6 +1,6 @@
 [<< Lab 4](lab04.md) | **Lab 4 Homework** | [Lab 5 >>](lab05.md)
 
-# ALX315 - Lab Guide 4 Homework - Create Login With Amazon credentials
+# Lab Guide 4 Homework - Create Login With Amazon credentials
 
 In this workshop we used generic Login With Amazon _clientId_ and _clientSecret_. However, we recommend
 you to create your own credentials in the Amazon developer portal. Follow the below instructions to create

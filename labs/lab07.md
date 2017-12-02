@@ -1,6 +1,6 @@
 [<< Lab 6](lab06.md) | **Lab 7** | [Lab 8 >>](lab08.md)
 
-# ALX315 - Lab Guide 7 - Multi-path conversations
+# Lab Guide 7 - Multi-path conversations
 
 ## **What you will do in this lab**
 You set up a multi-turn conversation with the skill and make a few assertions on the expected response by using the Test SDK tool. In addition to that we introduce conditional paths entered when certain conditions are met.

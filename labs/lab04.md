@@ -1,6 +1,6 @@
 [<< Lab 3](lab03.md) | **Lab 4** | [Lab 5 >>](lab05.md)
 
-# ALX315 - Lab Guide 4 - Set up the Test SDK and Client
+# Lab Guide 4 - Set up the Test SDK and Client
 
 ## **What you will do in this lab**
 The [Test SDK](https://github.com/KayLerch/alexa-skills-kit-tester-java) is an opensource project on Github  which uses SMAPI in a similar way ask-cli does. It keeps track of session state and supports multi-turn dialogs. You'll configure the client tool in this lab to get started for the next labs. 

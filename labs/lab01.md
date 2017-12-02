@@ -1,6 +1,6 @@
 [<< Home](../README.md) | **Lab 1** | [Lab 2 >>](lab02.md)
 
-# ALX315 - Lab Guide 1 - SMAPI and ASK CLI 
+# Lab Guide 1 - SMAPI and ASK CLI 
 
 ## **What you will do in this lab**
 Work with Alexa Skills Kit Commandline Interface (ask-cli) tool to set up a Custom Alexa skill with the Skill Management API (SMAPI).

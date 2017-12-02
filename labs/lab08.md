@@ -1,6 +1,6 @@
 [<< Lab 7](lab07.md) | **Lab 8**
 
-# ALX315 - Lab Guide 8 - Proactive Skill Monitoring
+# Lab Guide 8 - Proactive Skill Monitoring
 
 ## **What you will do in this lab**
 You will schedule periodical test executions for your skill and set up an alarm in case tests fail. 

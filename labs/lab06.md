@@ -1,6 +1,6 @@
 [<< Lab 5](lab05.md) | **Lab 6** | [Lab 7 >>](lab07.md)
 
-# ALX315 - Lab Guide 6 - Multi-turn conversations
+# Lab Guide 6 - Multi-turn conversations
 
 ## **What you will do in this lab**
 You set up a multi-turn conversation with the skill and make a few assertions on the expected response by using the Test SDK tool. 

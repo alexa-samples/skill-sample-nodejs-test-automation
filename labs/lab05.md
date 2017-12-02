@@ -1,6 +1,6 @@
 [<< Lab 4](lab04.md) | **Lab 5** | [Lab 6 >>](lab06.md)
 
-# ALX315 - Lab Guide 5 - Single-turn conversations
+# Lab Guide 5 - Single-turn conversations
 
 ## **What you will do in this lab**
 You will set up a single-turn conversation with the skill and make a few assertions on the expected response by using the Test SDK tool.

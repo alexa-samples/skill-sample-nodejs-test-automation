@@ -1,6 +1,6 @@
 [<< Lab 1](lab01.md) | **Lab 2** | [Lab 3 >>](lab03.md)
 
-# ALX315 - Lab Guide 2 - Service Simulator
+# Lab Guide 2 - Service Simulator
 
 ## **What you will do in this lab**
 Work with the Service Simulator tool in the [Amazon developer console](https://developer.amazon.com/) to manually test your freshly created Alexa skill.

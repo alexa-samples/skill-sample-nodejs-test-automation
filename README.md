@@ -1,6 +1,8 @@
 # Test Automation for Alexa Skills
 
-[View slides](https://www.slideshare.net/AmazonWebServices/alx315test-automation-for-alexa-skills)
+## **Related Resources**
+
+View [re:Invent workshop slides](https://www.slideshare.net/AmazonWebServices/alx315test-automation-for-alexa-skills) and check out the [Test SDK OpenSource Project @ Github](https://github.com/KayLerch/alexa-skills-kit-tester-java)
 
 ## **Prerequisites**
 

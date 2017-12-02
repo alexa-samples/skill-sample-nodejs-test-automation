@@ -1,5 +1,7 @@
 # Test Automation for Alexa Skills
 
+[View slides](https://www.slideshare.net/AmazonWebServices/alx315test-automation-for-alexa-skills)
+
 ## **Prerequisites**
 
 - **Amazon Developer Account** Go to the [Amazon developer console](https://developer.amazon.com/) to sign up for free in case you don't have an account yet.

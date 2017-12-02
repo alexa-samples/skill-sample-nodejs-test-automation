@@ -2,7 +2,7 @@
 
 ## **Related Resources**
 
-View [re:Invent workshop slides](https://www.slideshare.net/AmazonWebServices/alx315test-automation-for-alexa-skills) and check out the [Test SDK OpenSource Project @ Github](https://github.com/KayLerch/alexa-skills-kit-tester-java)
+View [re:Invent workshop slides](https://www.slideshare.net/AmazonWebServices/alx315test-automation-for-alexa-skills) and check out the [Test SDK open-source project](https://github.com/KayLerch/alexa-skills-kit-tester-java)
 
 ## **Prerequisites**
 

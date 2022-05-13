@@ -1,5 +1,8 @@
 # Test Automation for Alexa Skills
 
+# ** This repository has been archived **
+This repository is still available as a point-in-time reference, but no further updates or support will be prioritized.
+
 ## **Related Resources**
 
 View [re:Invent workshop slides](https://www.slideshare.net/AmazonWebServices/alx315test-automation-for-alexa-skills) and check out the [Test SDK open-source project](https://github.com/KayLerch/alexa-skills-kit-tester-java)
